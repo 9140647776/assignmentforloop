@@ -1,0 +1,632 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "3b920f20-ac46-4a9b-8cb3-acb9291b322f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n",
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in range(1, 11):\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "cb852578-583a-498c-b74b-c9367bc1288d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n"
+     ]
+    }
+   ],
+   "source": [
+    "x=[1,2,3,4,5]\n",
+    "sum=0\n",
+    "for n in x:\n",
+    "    sum=n\n",
+    "    print(sum)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "6eadec4d-12ff-42b1-b4dc-6f031707e09f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "the original string is : Geeksforgeeks\n",
+      " the reversed string(using loops) is: skeegrofskeeG\n"
+     ]
+    }
+   ],
+   "source": [
+    "def reverse(s):\n",
+    "    str = \"\"\n",
+    "    for i in s:\n",
+    "        str = i + str\n",
+    "    return str\n",
+    "s = \"Geeksforgeeks\"\n",
+    "print(\"the original string is : \", end=\"\")\n",
+    "print(s)\n",
+    "print(\" the reversed string(using loops) is: \", end=\"\")\n",
+    "print(reverse(s))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "f6b0da33-0509-4b4e-bf31-c9ccd981ac23",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter the number: \n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " 10\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      "factorial = 3628800\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"enter the number: \")\n",
+    "num = int(input())\n",
+    "\n",
+    "fact = 1\n",
+    "i = 1\n",
+    "while i<=num:\n",
+    "    fact = fact*i\n",
+    "    i = i+1\n",
+    "print(\"\\nfactorial =\", fact)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "92c5be1f-dddc-4e2c-906d-5e1b9e5088ac",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "10 13\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "the multiplication table of: 13\n",
+      "13 x 1 = 13\n",
+      "13 x 2 = 26\n",
+      "13 x 3 = 39\n",
+      "13 x 4 = 52\n",
+      "13 x 5 = 65\n",
+      "13 x 6 = 78\n",
+      "13 x 7 = 91\n",
+      "13 x 8 = 104\n",
+      "13 x 9 = 117\n",
+      "13 x 10 = 130\n"
+     ]
+    }
+   ],
+   "source": [
+    "number=int(input(\"10\"))\n",
+    "print(\"the multiplication table of:\",13)\n",
+    "for count in range(1,11):\n",
+    "    print(number,'x',count,'=',number*count)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "bc6837fe-7910-49af-a3d5-5ec2d4438870",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "even numbers in the list: 3\n",
+      "odd numbers in the list: 4\n"
+     ]
+    }
+   ],
+   "source": [
+    "list1=[10,21,4,45,66,93,1]\n",
+    "even_count, odd_count = 0,0\n",
+    "for num in list1:\n",
+    "    if num % 2==0:\n",
+    "        even_count +=1\n",
+    "    else:\n",
+    "        odd_count +=1\n",
+    "print(\"even numbers in the list:\", even_count)\n",
+    "print(\"odd numbers in the list:\", odd_count)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e1798578-07ca-40d9-9350-5028066c19d2",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "bef4485f-8ee8-4877-b3b2-21795603fb2e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "list with square of integers from 1 to 5:\n",
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "1 == []\n",
+    "for i in range(1,5):\n",
+    "    1,(i*i)\n",
+    "print(\"list with square of integers from 1 to 5:\")\n",
+    "print(1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "9ad95b37-9c53-4375-b736-91c75f3cb844",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter a string: hello\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n"
+     ]
+    }
+   ],
+   "source": [
+    "s=input(\"enter a string:\")\n",
+    "count=0\n",
+    "for i in s:\n",
+    "    count=count+1\n",
+    "    print(count)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "5f54ac71-c42e-470c-8986-22c0df882fa7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n",
+      "1\n",
+      "1\n",
+      "1\n",
+      "1\n",
+      "1\n",
+      "1\n",
+      "1\n",
+      "1\n",
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "first = 0\n",
+    "second = 1\n",
+    "print(first)\n",
+    "print(second)\n",
+    "for x in range(1,9):\n",
+    "    third = first+second\n",
+    "    print(third)\n",
+    "    first,second,third"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "6b1ef433-c479-48be-a90c-dfcdd08cdad2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 5, 9]\n"
+     ]
+    }
+   ],
+   "source": [
+    "list = [1,2,1,2,3,4,5,1,1,2,5,6,7,8,9,9]\n",
+    "uniqueList = []\n",
+    "duplicateList = []\n",
+    "for i in list:\n",
+    "    if i not in uniqueList:\n",
+    "        uniqueList.append(i)\n",
+    "    elif i not in duplicateList:\n",
+    "        duplicateList.append(i)\n",
+    "print(duplicateList)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "45990375-3682-4ae1-900b-74c82c00ab83",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "prime numbers between 900 and 100 are:\n"
+     ]
+    }
+   ],
+   "source": [
+    "lower = 900\n",
+    "upper = 100\n",
+    "print(\"prime numbers between\",lower,\"and\",upper,\"are:\")\n",
+    "for num in range(lower,upper+1):\n",
+    "    if num>1:\n",
+    "        for i in range(2,num):\n",
+    "            if (num % i) == 0:\n",
+    "                break\n",
+    "        else:\n",
+    "            print(num)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "id": "103014af-2963-45db-b214-4bd2e0fa3614",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "IndentationError",
+     "evalue": "expected an indented block after 'for' statement on line 8 (837398383.py, line 9)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;36m  Cell \u001b[0;32mIn[46], line 9\u001b[0;36m\u001b[0m\n\u001b[0;31m    for x in vowels:\u001b[0m\n\u001b[0m    ^\u001b[0m\n\u001b[0;31mIndentationError\u001b[0m\u001b[0;31m:\u001b[0m expected an indented block after 'for' statement on line 8\n"
+     ]
+    }
+   ],
+   "source": [
+    "string = input(\"hello:\")\n",
+    "if string=='x':\n",
+    "    exit();\n",
+    "else:\n",
+    "    newstr = string;\n",
+    "    print(\"\\nremoving vowels fromthe given string\");\n",
+    "    vowels = ('a','e','i','o','u');\n",
+    "    for x in string.lower():\n",
+    "    for x in vowels:\n",
+    "    newstr = newstr.replace(x,\"\");\n",
+    "    print(\"new string after successfully removed all the vowels:\");\n",
+    "    print(newstr);\n",
+    "               "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "2637cc4e-b488-4d35-8445-f0704170aa74",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 5, 9]\n"
+     ]
+    }
+   ],
+   "source": [
+    "list = [1,2,1,2,3,4,5,1,1,2,5,6,7,8,9,9]\n",
+    "uniquelist = []\n",
+    "duplicatelist = []\n",
+    "for i in list:\n",
+    "    if i not in uniquelist:\n",
+    "        uniquelist.append(i)\n",
+    "    elif i not in duplicatelist:\n",
+    "        duplicatelist.append(i)\n",
+    "print(duplicatelist)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "c47de682-0e5f-44b1-b836-98f94e70363d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter the lower bound:3 3\n",
+      "enter the upper bound:71 71\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "prime numbers between 3 and 71 are:\n",
+      "357111317192329313741434753596167"
+     ]
+    }
+   ],
+   "source": [
+    "start = int(input(\"enter the lower bound:3\"))\n",
+    "stop = int(input(\"enter the upper bound:71\"))\n",
+    "print(\"prime numbers between\",start,\"and\",stop,\"are:\")\n",
+    "for val in range(start,stop):\n",
+    "    if val>1:\n",
+    "        for i in range(2,val):\n",
+    "            if (val % i)==0:\n",
+    "                break\n",
+    "        else:\n",
+    "            print(val,end=\"\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "3db279fe-ab35-4b35-96d2-4761a592dafd",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "7285879069\n",
+      "8087658985\n",
+      "9691707897\n"
+     ]
+    }
+   ],
+   "source": [
+    "student_dt=[[72,85,87,90,69],[80,87,65,89,85],[96,91,70,78,97]]\n",
+    "for x in student_dt:#outer loop\n",
+    "    for i in x:#inner loop\n",
+    "        print(i,end=\"\")\n",
+    "    print()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "c0cb3ea2-3a7a-45af-9fca-3b121de9a5a6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[5, 8, 52, 87]\n"
+     ]
+    }
+   ],
+   "source": [
+    "mylist = [21,5,8,52,21,87]\n",
+    "r_item = 21\n",
+    "for item in mylist:\n",
+    "    if(item==r_item):\n",
+    "        mylist.remove(r_item)\n",
+    "print(mylist)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "fbaf2e1f-e33e-4ce4-b3b1-c69517213094",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "13 10\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "13\n",
+      "10 x 1 = 10\n",
+      "10 x 2 = 20\n",
+      "10 x 3 = 30\n",
+      "10 x 4 = 40\n",
+      "10 x 5 = 50\n",
+      "10 x 6 = 60\n",
+      "10 x 7 = 70\n",
+      "10 x 8 = 80\n",
+      "10 x 9 = 90\n",
+      "10 x 10 = 100\n"
+     ]
+    }
+   ],
+   "source": [
+    "number=int(input(\"13\"))\n",
+    "print(\"13\")\n",
+    "for count in range(1,11):\n",
+    "    print(number,'x',count,'=',number*count)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "eed7a047-6cef-4245-aa40-c3338614b5d8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "temperature in celsius is\n",
+      "12.222222222222221\n"
+     ]
+    }
+   ],
+   "source": [
+    "fahrenheit=54\n",
+    "celsius = ((fahrenheit-32)*5/9)\n",
+    "print(\"temperature in celsius is\");\n",
+    "print(celsius);"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "19de623f-ce02-45e3-8476-ccb71399af5c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "4=\n",
+      " 4\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "*\n",
+      "**\n",
+      "***\n",
+      "****\n"
+     ]
+    }
+   ],
+   "source": [
+    "x=int(input(\"4=\\n\"))\n",
+    "for i in range(x):\n",
+    "    for j in range (i+1):\n",
+    "        print(\"*\",end='')\n",
+    "    print(\"\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "id": "16409c2e-53f7-4102-8964-90ea54c02f7f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "gcd of 36 and 60 is 12\n"
+     ]
+    }
+   ],
+   "source": [
+    "num1=36\n",
+    "num2=60\n",
+    "gcd=1\n",
+    "for i in range(1,min(num1,num2)):\n",
+    "    if num1 % i == 0 and num2 % i == 0:\n",
+    "        gcd = i\n",
+    "print(\"gcd of\",num1,\"and\",num2, \"is\", gcd)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e4ecdb94-b3a9-4c34-a991-ba3aa2792116",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
+test_list = [12,67,98,34]
+print("the original list is:"+ str(test_list))
+res = list(map(lambda ele: sum(int(sub) for sub 
